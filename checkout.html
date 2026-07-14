@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Neelas Yogo Fura</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+</head>
+
+<body>
+    
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="images/yogo-fura-logo.jpeg" alt="Neelas Yogo Fura Logo">
+                <h2>Neelahs Yogo Fura</h2>
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <div class="menu-toggle">
+
+                <i class="fas fa-bars"></i>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="checkout">
+
+        <div class="checkout-container">
+
+            <div class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div id="checkoutItems">
+
+                    <p>Your cart is empty.</p>
+
+                </div>
+
+                <h3>
+
+                    Total:
+
+                    <span id="checkoutTotal">
+
+                        ₦0
+
+                    </span>
+
+                </h3>
+
+            </div>
+
+            <div class="checkout-form">
+
+    
+
+                <div class="payment-card">
+
+                    <h2>Bank Transfer Details</h2>
+
+                    <p><strong>Bank:</strong> Opay</p>
+
+                    <p><strong>Account Name:</strong> Hadiza Ahmad</p>
+
+                    <p>
+                        <strong>Account Number:</strong>
+                        <span id="accountNumber">8030859526</span>
+                    </p>
+
+                    <button type="button" id="copyAccount">
+                        Copy Account Number
+                    </button>
+
+                    <p class="payment-note">
+                        After payment, click <strong>Place Order</strong>.
+                        WhatsApp will open and you can attach your payment receipt there.
+                    </p>
+
+                </div>
+
+                <form id="orderForm">
+                    <h2>Delivery Details</h2>
+
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+
+                    <input type="text" id="address" placeholder="Delivery Address" required>
+
+                    <input type="text" id="city" placeholder="City" required>
+
+                    <select id="paymentMethod" required>
+
+                        <option value="">Select Payment Method</option>
+
+                        <option value="Bank Transfer">Bank Transfer</option>
+
+            
+
+                    </select>
+
+                    <label>Upload Payment Receipt</label>
+
+                    <input type="file" id="receipt">
+                    <button type="submit">Place Order</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/checkout.js"></script>
+
+    <a href="https://wa.me/2348030859526" class="whatsapp-float" target="_blank">
+
+        <i class="fab fa-whatsapp"></i>
+
+    </a>
+    <script src="js/script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true,
+    offset:100
+});
+</script>
+
+</body>
+
+</html>

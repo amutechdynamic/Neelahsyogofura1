@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Neelas Yogo Fura</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+    
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="images/yogo-fura-logo.jpeg" alt="Neelas Yogo Fura Logo">
+                <h2>Neelahs Yogo Fura</h2>
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <a href="checkout.html" class="order-btn">
+                        Checkout
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="products-hero" data-aos="fade-up">
+
+        <h1>Our Products</h1>
+
+        <p>
+
+            Freshly prepared Yogo Fura made with love and premium quality ingredients.
+
+        </p>
+
+    </section>
+
+    <section class="search-section">
+
+        <input type="text" id="searchInput" placeholder="Search products...">
+
+    </section>
+
+    <section class="products">
+
+        <div class="product-container" id="productContainer">
+
+            
+
+        </div>
+
+
+        <!-- ================= SHOPPING CART ================= -->
+
+        <aside class="shopping-cart" id="shoppingCart">
+
+            <div class="cart-header">
+
+                <h2>Shopping Cart</h2>
+
+                <button id="closeCart">
+                    <i class="fas fa-times"></i>
+                </button>
+
+            </div>
+
+            <div id="cartItems">
+
+                <p>Your cart is empty.</p>
+
+            </div>
+
+            <div class="cart-footer">
+
+                <h3>
+
+                    Total:
+
+                    <span id="cartTotal">
+
+                        ₦0
+
+                    </span>
+
+                </h3>
+
+                <a href="checkout.html" class="checkout-btn">
+
+                    Proceed to Checkout
+
+                </a>
+
+            </div>
+
+        </aside>
+
+        <div class="cart-icon" id="openCart">
+
+            <i class="fas fa-shopping-cart"></i>
+
+            <span id="cartCount">0</span>
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/products.js"></script>
+
+    <a href="https://wa.me/2348030859526" class="whatsapp-float" target="_blank">
+
+        <i class="fab fa-whatsapp"></i>
+
+    </a>
+
+    <script src="js/script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true,
+    offset:100
+});
+</script>
+
+</body>
+
+</html>
