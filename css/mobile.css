@@ -6,6 +6,7 @@
 
 .menu-toggle{
     display:block;
+   cursor:pointer;
 }
 
 .nav-links{
