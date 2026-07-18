@@ -618,13 +618,22 @@ header {
 
 .cart-icon {
 
-    position: relative;
-
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    left: auto;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(211, 212, 225);
     font-size: 24px;
-
     cursor: pointer;
-
     color: #2d629b;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 2);
 
 }
 
